@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Free shipping world wide</title>
+    <style>
+        .bi-lightning-charge-fill{
+            color: darkgoldenrod;
+        }
+   @media screen and (orientation:landscape) {
+    .nav-brand{
+        font-size: 40px;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        }
+        .brand-category{
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        .brand-bar{
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    header{
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        padding: 30px;
+        background-color: aliceblue;
+        box-shadow: 5px 5px 10px gray;
+        word-spacing: 40px;
+        padding-top: 50px;
+    }
+    .title{
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        word-spacing: 5px;
+        margin-top: 10px;
+    }
+    .banner-women{
+        background-image: url(./images/fashion1.jpg);
+        background-size: cover;
+        background-repeat:no-repeat ;
+        height: 500px;
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+    }
+    .banner-men{
+        background-image: url(./images/fashion2.jpg);
+        background-size: cover;
+        background-repeat:no-repeat ;
+        height: 500px;
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+    }
+    .banner-kid{
+        background-image: url(./images/fashion3.jpg);
+        background-size: cover;
+        background-repeat:no-repeat ;
+        height: 500px;
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+    }
+    .brand-banner{
+        display: flex;
+        margin-top: 15px;
+    }
+    h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        color: white;
+        text-shadow: 5px 5px 10px rgb(219, 197, 197);
+    }
+    button{
+        background-color: white;
+        color: black;
+        height: 35px;
+        width: 150px;
+        border: none;
+    }
+    .banner-policy{
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+        margin-top: 20px;
+        margin-left: 70px;
+    }
+    .bi-truck {
+            color: red;
+            font-size: 20px;
+           }
+           .bi-arrow-repeat{
+            color: red;
+            font-size: 20px;
+           }
+           .bi-lock {
+            color: red;
+            font-size: 20px;
+           }
+           .bi-tag {
+            color: red;
+            font-size: 20px;
+           }
+           .shop{
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        margin-left: 20px;
+    }
+   h5{
+    margin-top: 100px;
+    text-align: center;
+   }
+   .picks{
+    text-align: center;
+   }
+   .bag{
+    background-image: url(./images/bag.jpg);
+    height: 400px;
+    width: 400px;
+    padding-top: 100px;
+    padding-left: 20px;
+    justify-content: center;
+   }
+   .print{
+    background-image: url(./images/Printed.jpg);
+    height: 400px;
+    width: 700px;
+    margin-left: 50px;
+    padding-top: 100px;
+    padding-left: 20px;
+    justify-content: center;
+   }
+   .bag-print{
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    margin-top: 50px;
+    margin-left: 70px;
+   }
+   .off{
+    display: none;
+   }
+   .sell{
+    margin-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+   }
+   .ctlg{
+    text-align: center;
+    margin-top: 20px;
+    word-spacing: 20px;
+   }
+   .banner{
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+   }
+   .card{
+    padding: 10px;
+    margin-left: 30px;
+    margin-top: 80px;
+    }
+    .content{
+        margin-top: 30px;
+    }
+    .banner-review {
+        text-align: center;
+        margin-top: 80px;
+    } 
+    .review {
+      display: grid;
+      grid-template-columns: 4fr 4fr 4fr;
+      margin-left: 100px;
+      margin-right: 50px;
+      margin-top: 80px;
+    }
+    .crd{
+        background-color: white;
+        box-shadow: 10px 10px 50px rgb(236, 222, 222);
+        height: 400px;
+        width: 300px;
+    }
+ .card1 {
+    display: grid;
+    grid-template-columns: 4fr 12fr;
+    margin-top: 50px;
+    margin-left: 30px;
+   }
+  p {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+  }
+  footer {
+    background-color: rgb(0, 0, 0);
+    height: 500px;
+    margin-top: 50px;
+  }
+  h3{
+    text-align: center;
+    padding-top: 20px;
+  }
+  input{
+    background-color: rgb(90, 71, 71);
+    height: 60px;
+    width: 400px;
+    margin-left: 350px;
+    padding-left: 20px;
+    margin-top: 30px;
+  }
+  .sub {
+    background-color: rgb(90, 71, 71);
+    height: 65px;
+    width: 130px;
+    color: antiquewhite;
+    margin-left: 10px;
+  }
+  .ftr-content {
+    display: grid;
+    grid-template-columns: 4fr 2fr 2fr 2fr 2fr;
+    margin-top: 80px;
+  }
+  .logo {
+    margin-left: 70px;
+    word-spacing: 20px;
+  }
+.term {
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+.card-img {
+    display: none;
+}
+.card-img3 {
+    display: none;
+}
+}
+   @media screen and (orientation:portrait) {
+    .container{
+        display: grid;
+        grid-template-columns: 12fr;
+    }
+    header{
+        background-color: white;
+        box-shadow: 5px 5px 10px rgb(190, 179, 179);
+        color: black;
+        padding: 50px;
+        font-size: 35px;
+        padding-left: 10px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        grid-row: 1;
+    }
+    .brand-category{
+        display: none;
+    }
+    .brand-bar{
+        display: none;
+    }
+    .title{
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding-top: 25px;
+        height: 50px;
+        margin-top: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        grid-row: 2;
+    }
+    .banner-women{
+        background-image: url(./images/fashion1.jpg);
+        background-size: cover;
+        height: 500px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        margin-top: 10px;
+        grid-row: 3;
+    }
+    h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        color: white;
+        text-shadow: 5px 5px 10px rgb(219, 197, 197);
+    }
+    button{
+        background-color: white;
+        color: black;
+        height: 35px;
+        width: 150px;
+        border: none;
+    }
+    .banner-men{
+        display: none;
+    }
+    .banner-kid{
+        display: none;
+    }
+    .banner-policy{
+        margin-top: 40px;
+        grid-row: 4;
+    }
+    .policy{
+        padding: 10px;
+    }
+    .shop{
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        margin-left: 20px;
+    }
+    .bi-truck {
+            color: red;
+            font-size: 20px;
+           }
+           .bi-arrow-repeat{
+            color: red;
+            font-size: 20px;
+           }
+           .bi-lock {
+            color: red;
+            font-size: 20px;
+           }
+           .bi-tag {
+            color: red;
+            font-size: 20px;
+           }
+           h5{
+    margin-top: 100px;
+    text-align: center;
+    grid-row: 5;
+   }
+   .picks{
+    text-align: center;
+   }
+   .bag{
+     grid-row: 6;
+     background-image: url(./images/bag.jpg);
+     background-size: cover;
+        height: 500px;
+        width: 400px;
+        margin-top: 80px;
+        padding-top: 80px;
+     
+   }
+   .print{
+    grid-row: 7;
+    background-image: url(./images/print.jpg);
+    background-size: cover;
+        height: 500px;
+        width: 400px;
+        margin-top: 80px;
+        padding-top: 80px;margin-top: 30px;
+   }
+   .print div{
+    color: white;
+   }
+   .off{
+       background-color: brown;
+       color: white;
+       padding: 30px;
+       width: 40px;
+       border-radius: 80px;
+       margin-left: 300px;
+       margin-bottom: 250px;
+   }
+   .sell{
+    margin-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+   }
+   .ctlg{
+    text-align: center;
+    margin-top: 20px;
+    word-spacing: 20px;
+}
+.banner {
+    display: none;
+
+}
+.banner-review {
+    display: none;
+}
+.review {
+    display: none;
+} 
+.card-img{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    margin-top: 70px;
+    padding: 10px;
+}
+.card-img1 {
+    padding-right: 5px;
+}
+.card-img2 {
+    padding-left: 5px;
+}
+.card-img3 {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    margin-top: 0px;
+    padding: 10px;
+}
+footer {
+    background-color: rgb(0, 0, 0);
+    height: 800px;
+    margin-top: 50px;
+  }
+  h3 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  input{
+    background-color: rgb(90, 71, 71);
+    height: 60px;
+    width: 200px;
+    margin-left: 50px;
+    padding-left: 5px;
+    margin-top: 10px;
+  }
+  .sub {
+    background-color: rgb(90, 71, 71);
+    height: 65px;
+    width: 80px;
+    color: antiquewhite;
+    margin-left: 10px;
+  }
+  .logo {
+    margin-top: 50px;
+    text-align: center;
+    word-spacing: 10px;
+  }
+  dl {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    margin-top: 30px;
+    padding-left: 10px;
+  }
+  .term {
+    padding-left: 40px;
+    padding-bottom: 10px;
+  }
+}
+    </style>
+</head>
+<body>
+   <div class="container">
+    <header>
+        <div class="nav-brand">
+            Shopper.
+        </div>
+        <div class="brand-category">
+        <span>Home</span>
+        <span>Catalog</span>
+        <span>Shop</span>
+        <span>pages</span>
+        <span>Blog</span>
+        <span>Docs</span>
+        </div>
+        <div class="brand-bar">
+        <span class="bi bi-search"></span>
+        <span class="bi bi-person"></span>
+        <span class="bi bi-heart"></span>
+        <span class="bi bi-cart"></span>
+        </div>
+            </header>
+            <div class="title"><span class="bi bi-lightning-charge-fill"></span>HAPPY HOLIDAY DEALS ON EVERYTHING<span class="bi bi-lightning-charge-fill"></span></div>
+        <section>
+            <div class="brand-banner">
+                <div class="banner-women">
+                  <div>
+                       <h1>Women</h1>
+                                </div>  
+                                <div>
+      <button>Shop Women  <span class="bi bi-arrow-right"></span></button>
+                                </div>
+
+                </div>
+                <div class="banner-men">
+                    <div>
+                        <h1>Men</h1>
+                                 </div>                        
+                                    <div>
+       <button>Shop Men  <span class="bi bi-arrow-right"></span></button>
+                                 </div>
+                </div>
+                <div  class="banner-kid">
+                    <div>
+                        <h1>Kids</h1>
+                                 </div>                           <div>
+       <button>Shop Kid <span class="bi bi-arrow-right"></span></button>
+                                 </div>
+                </div>
+            </div>
+            <div class="banner-policy">
+                  <div class="policy">
+                   <span class="bi bi-truck"></span>
+                 <span class="shop">  FREE SHIPPING</span>
+                   <font face="arial" color="light-gray" size="3px"><p>from all orders over &#36;100</p></font>
+                  </div> 
+                  <div class="policy">
+                    <span class="bi bi-arrow-repeat"></span>
+                    <span class="shop">FREE RETURNS</span>
+                    <font face="arial" color="light-gray" size="3px"><p>Return money within 30days</p></font>
+                  </div> 
+                  <div class="policy">
+                  <span class="bi bi-lock"></span>
+                  <span class="shop">SECURE SHOPPING</span>
+                  <font face="arial" color="light-gray" size="3px"><p>You're in safe hands</p></font>
+                  </div>
+                  <div class="policy">
+                   <span class="bi bi-tag"></span>
+                   <span class="shop">OVER 10,000 STYLES</span>
+                   <font face="arial" color="light-gray" size="3px"><p>We have everything you need</p></font>
+                  </div>
+                </div>
+
+             <div class="new-collections">
+                <div>
+                <font face="arial" color="gray"><h5>NEW COLLECTION</h5></font>
+            </div>  
+            <div class="picks">
+                <font face="arial" color="black" size="5"><h2>Best Picks 2024</h2></font>
+                <font face="arial" color="light-gray"><p>Appear, dry there darknesss they're seas, dry water things fly midst. Beast, above fly <br>brought very green.</p></font>
+            </div> 
+            <div class="bag-print">
+               <div class="bag">
+                  <font color="white" face="Arial" size="6"><div>Bags Collection</div></font>
+                  <button>Shop Now <span class="bi bi-arrow-right"></span></button>
+               </div>
+               <div class="print">
+                <font color="black" face="Arial" size="6"><div>Printed Men's Shirt</div></font>
+                <button>Shop Now <span class="bi bi-arrow-right"></span></button>
+                <font size="4"><div class="off">50% off</div></font>
+               </div>
+            </div>
+             </div>
+
+                <div class="month-sell">
+                    <div class="sell">Top Month Seller</div>
+                    <div class="ctlg">
+                       <font color="red" size="4"><span><u>Women</u></span></font>
+                       <font size="4" color="black"><span>Men</span></font>
+                       <font color="black" size="4"><span>Kids</span></font>
+                    </div>
+                  </div>
+                    <div class="banner">
+                           <div class="card">
+                           <div class="image"><img src="./images/card2.jpg" alt=""  height: 100%; width: 100%;></div>
+                           <div class="content">
+                              <font color="gray" ><span>Shoes</span></font><br>
+                           <font color="black" size="5"><span>Leather Sneakers</span></font><br>
+                              <font color="gray" size="4">&#36;129.00</font>
+                           </div>
+                      </div>
+                      <div class="card">
+                          <div class="image1"><img src="./images/card3.jpg" alt=""  height: 100%; width: 100%;></div>
+                          <div class="content">
+                              <font color="gray" ><span>Watches</span></font><br>
+                           <font color="black" size="5"><span>A Quality Watch </span></font><br>
+                              <font color="gray" size="4">&#36;400.29</font>
+                           </div>
+                      </div>
+                      <div class="card">
+                        <div><img src="./images/card4.jpg" alt=""  height: 100%; width: 100%;></div>
+                        <div class="content">
+                            <font color="gray" ><span>Bags</span></font><br>
+                         <font color="black" size="5"><span>Luxury-handbags</span></font><br>
+                            <font color="gray" size="4">&#36;329.00</font>
+                         </div>
+                    </div>
+                    </div> 
+                  <div class="banner-review">
+                         <font face="Arial" color="gray"> <h5>WHAT BUYER'S SAY</h5></font>
+                         <font face="Arial" color="black" size="6"><p>Latest Buyer's Review</p></font>
+                  </div>
+                  <div class="review">
+                    <div class="crd">
+                     <div class="card1">
+                      <div class="img">
+                        <span><img src="./images/card2.jpg" width="60%" height="80%"></span>
+                    </div>
+                        <div class="rating">
+                            <span ><font color="gray" size="2">shoes</font><br>
+                                 <span><font color="black" size="4">Low top sneakers</font></span><br>
+                                     <font color="darkgoldenrod"><span class="bi bi-star-fill" ></span>
+                                         <span class="bi bi-star-fill" ></span>
+                                         <span class="bi bi-star-fill" ></span></font>
+                                    <font color="gray">
+                                     <span class="bi bi-star-fill" ></span>
+                                     <span class="bi bi-star-fill" ></span>
+                                    </font>
+                        </div>
+                   </div>
+                        <font face="Arial" color="gray">  <p> A  shoe is an item of footwear intended to protect and comfort the human foot. Though the human foot can adapt to varied terrains and climate conditions, it is vulnerable, and shoes provide protection. Form was originally tied to function, but over time, shoes also became fashion items.</p></font>
+                        <font face="Arial" color="gray" size="2"><p>Loan Edwards, 1 JUN 2024</p></font>
+                     </div>
+                    <div class="crd">
+                    <div class="card1">
+                        <div class="img">
+                            <span><img src="./images/card1.webp" width="60%" height="80%"></span>
+                        </div>
+                       <div  class="rating">
+                        <span ><font color="gray" size="2">TV</font><br>
+                            <font color="black" size="4">Top quality TV</font><br>
+                                <font color="darkgoldenrod"><span class="bi bi-star-fill" ></span>
+                                    <span class="bi bi-star-fill" ></span>
+                                    <span class="bi bi-star-fill" ></span></font>
+                               <font color="gray">
+                                <span class="bi bi-star-fill" ></span>
+                                <span class="bi bi-star-fill" ></span>
+                               </font>
+                       </div>
+                       </div>
+                        <font color="gray" face="Arial"><p>A television set or television receiver is an electronic device for the purpose of viewing and hearing television broadcasts, or as a computer monitor. It combines a tuner, display, and loudspeakers</p></font>
+                        <font face="Arial" color="gray" size="2"><p>Jan Jefferon, 6 March 2024</p></font>
+                     </div>
+                    <div class="crd">
+                     <div class="card1">
+                       <div class="img">
+                        <img src="./images/card4.jpg" width="60%" height="80%"></span>
+                       </div>
+                       <div class="rating">
+                        <span ><font color="gray" size="2">Bags</font><br>
+                            <span><font color="black" size="4">Luxury bags</font></span><br>
+                                 <font color="darkgoldenrod"><span class="bi bi-star-fill" ></span>
+                                     <span class="bi bi-star-fill" ></span>
+                                     <span class="bi bi-star-fill" ></span></font>
+                                <font color="gray">
+                                 <span class="bi bi-star-fill" ></span>
+                                 <span class="bi bi-star-fill" ></span>
+                                </font>
+                       </div>
+                       </div>
+                        <font face="Arial" color="gray"><p>A bag (also known regionally as a sack) is a common tool in the form of a non-rigid container, typically made of cloth, leather, paper, or plastic. The use of bags predates recorded history, with the earliest bags being lengths of animal skin, cotton, or woven plant fibers, folded up at the edges and secured in that shape with strings of the same material</p></font>
+                        <font face="Arial" color="gray" size="2"><p>Darel Bakers, 5 May 2024</p></font>
+                 </div>
+        </section>
+        <div class="card-img">
+            <div class="card-img1">
+               <img src="./images/img1.jpg" alt="" width="100%" height="100%">
+            </div>
+            <div class="card-img2">
+                <img src="./images/img2.jpg" alt="" width="100%" height="100%">
+            </div>
+        </div> 
+        <div class="card-img3">
+                <div class="card-img1">
+                    <img src="./images/img3.jpg" alt="" width="100%" height="100%">
+                 </div>
+                 <div class="card-img2">
+                     <img src="./images/img4.jpg" alt="" width="100%" height="100%">
+                 </div>
+        </div>
+        <div class="card-img3">
+            <div class="card-img1">
+                <img src="./images/img5.jpg" alt="" width="100%" height="100%">
+             </div>
+             <div class="card-img2">
+                 <img src="./images/img6.jpg" alt="" width="100%" height="100%">
+             </div>
+    </div>
+       
+            <footer>
+                <font face="Arial" color="white"><h3>Want Style Ideas and Treat? </h3></font>
+               <form action="">
+               <font color="gray"> <input type="email" name="email" placeholder="Enter Email*"></font>
+               <button class="sub">Subscribe</button>
+               </form>
+               <div class="ftr-content">
+                <div class="logo">
+                   <font face="Arial" color="white" size="5"><p>Shopper</p></font>
+                  <font color="white"> <span class="bi bi-facebook"></span></font>
+                  <font color="white"> <span class="bi bi-youtube"></span></font>
+                  <font color="white"> <span class="bi bi-twitter"></span></font>
+                  <font color="white"> <span class="bi bi-instagram"></span></font>
+                  <font color="white"> <span class="bi bi-telegram"></span></font>
+                </div>
+                    <div>
+                        <dl>
+                            <font color="white"><dt class="term">SUPPORT</dt></font>
+                           <font color="gray" size="2">
+                            <dd>Contact Us</dd>
+                            <dd>FAQs</dd>
+                            <dd>Size Guide</dd>
+                            <dd>shipping & Returns</dd>
+                           </font>
+                        </dl>
+                    </div>
+                    <div>
+                        <dl>
+                            <font color="white"><dt class="term">SHOP</dt> </font>
+                           <font color="gray" size="2">
+                            <dd>Man's Shopping</dd>
+                            <dd>Women's Shopping</dd>
+                            <dd>Kid's Shopping</dd>
+                            <dd>Discount</dd>
+                           </font>
+                           </dl>
+                    </div>
+                    <div>
+                        <dl>
+                            <font color="white"><dt class="term">COMPANY</dt> </font>
+                           <font color="gray" size="2">
+                            <dd>Our Company</dd>
+                            <dd>Careers</dd>
+                            <dd>Terms & Conditions</dd>
+                            <dd>Privacy & Cookie</dd>
+                            <dd>Policy</dd>
+                           </font>
+                        </dl>
+                    </div>
+                    <div>
+                        <dl>
+                            <font color="white"><dt class="term">CONTACT</dt> </font>
+                           <font color="gray" size="2">
+                            <dd>1-234-235-5689</dd>
+                            <dd>1-248-345-8907</dd>
+                            <dd>help@shopper.com</dd>
+                           </font>
+                        </dl>
+                    </div>
+               </div>
+            </footer>
+   </div>
+</body>
+</html>
